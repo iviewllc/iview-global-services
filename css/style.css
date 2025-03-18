@@ -18,14 +18,11 @@ header {
     color: white;
     padding: 10px 0;
     display: flex;
-    justify-content: left;  /* Centers the logo horizontally */
-    align-items: left;  /* Centers the logo vertically */
-    height: 100px;  /* Set a fixed height for the header */
-    overflow: hidden;  /* Ensures that anything exceeding the header height is hidden */
-    position: relative;  /* Set the header as a relative container for absolute positioning */
+    justify-content: center;  /* Centers the logos horizontally */
+    flex-wrap: wrap;  /* Allows the logos to wrap */
+    align-items: center;  /* Centers logos vertically */
 }
 
-/* Logo styling */
 .logo a {
     display: block;
     text-align: left;
@@ -37,7 +34,6 @@ header {
     max-width: 100%; /* Ensure the logo doesn't stretch beyond the container */
 }
 
-/* Navigation styling */
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -47,7 +43,6 @@ nav ul {
     right: 20px;  /* Align them to the right of the header */
 }
 
-/* Navigation list item styling */
 nav ul li {
     display: inline-block;
     margin-left: 20px;
@@ -55,15 +50,16 @@ nav ul li {
 
 /* Navigation link styling */
 nav ul li a {
-    color: white;
+    color: black;  /* Set the font color to black */
     text-decoration: none;
     font-size: 18px;
 }
 
+/* Hero Section */
 .hero {
     background: url('assets/images/hero-bg.jpg') no-repeat center center/cover;
     height: 100vh;
-    color: black;  /* Change font color to black */
+    color: black;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -75,7 +71,7 @@ nav ul li a {
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 20px;
-    color: black;  /* Ensure the heading is black */
+    color: black;
 }
 
 .hero p {
@@ -84,7 +80,7 @@ nav ul li a {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    color: black;  /* Ensure the paragraph text is black */
+    color: black;
 }
 
 .cta-btn {
@@ -96,29 +92,7 @@ nav ul li a {
     border-radius: 5px;
 }
 
-
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.cta-btn {
-    padding: 10px 20px;
-    background-color: #ff6600;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 5px;
-}
-
+/* About, Services, and Contact Sections */
 section {
     padding: 40px 20px;
     text-align: center;
@@ -127,12 +101,14 @@ section {
 h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    color: black !important;  /* Ensure h2 tags are black */
 }
 
 .services-container {
     display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .service {
@@ -160,6 +136,7 @@ form button {
     border-radius: 5px;
 }
 
+/* Footer Section */
 footer {
     background-color: #003366;
     color: white;
@@ -167,12 +144,53 @@ footer {
     text-align: center;
 }
 
+/* Media Queries for Responsiveness */
 @media screen and (max-width: 768px) {
+
+    /* Header adjustments */
+    header {
+        padding: 20px 0;
+        flex-direction: column;  /* Stack logos vertically on smaller screens */
+    }
+
     .logo img {
         height: 60px;  /* Reduce the size of the logo for smaller screens */
     }
 
-    header {
-        height: 80px;  /* Adjust header height for smaller screens */
+    /* Navigation adjustments */
+    nav ul {
+        display: none;  /* Hide the navigation links on smaller screens */
+    }
+
+    /* Hero Section adjustments */
+    .hero h1 {
+        font-size: 1.5rem;  /* Make the hero title smaller on mobile */
+    }
+
+    .hero p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .cta-btn {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    /* Services Section adjustments */
+    .service {
+        width: 100%;  /* Stack services vertically on smaller screens */
+        margin-bottom: 20px;
+    }
+
+    /* Contact Form adjustments */
+    form input, form textarea {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    /* Footer adjustments */
+    footer {
+        padding: 15px 0;
     }
 }
