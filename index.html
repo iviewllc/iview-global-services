@@ -3,44 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IView Global Tech Services LLC</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header, footer { background: #333; color: white; text-align: center; padding: 1em; }
-        nav { display: flex; justify-content: center; background: #444; padding: 0.5em; }
-        nav a { color: white; text-decoration: none; padding: 0 1em; }
-        section { padding: 2em; max-width: 800px; margin: auto; }
-    </style>
+    <title>IView Global Tech Services</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>IView Global Tech Services LLC</h1>
-    </header>
+<!-- Header Section -->
+<header>
+    <div class="logo">
+        <a href="#">
+            <img src="assets/images/logo.png" alt="IView Global Tech Logo">
+        </a>
+    </div>
+    <div class="logo">
+        <a href="#">
+            <img src="assets/images/header_title_1.png" alt="IView Global Tech Logo">
+        </a>
+    </div>
+    <div class="logo">
+        <a href="#">
+            <img src="assets/images/header_title_2.png" alt="IView Global Tech Logo">
+        </a>
+    </div>
     <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About Us</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
-    <section id="home">
-        <h2>Welcome to IView Global Tech Services</h2>
-        <p>Your trusted partner in technology solutions.</p>
-    </section>
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We are a technology solutions provider dedicated to delivering innovative IT services.</p>
-    </section>
-    <section id="services">
-        <h2>Our Services</h2>
-        <p>We offer software development, cloud solutions, cybersecurity, and more.</p>
-    </section>
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: admin@iview-global.com</p>
-        <p>Phone: (786) 239-9078</p>
-    </section>
-    <footer>
-        <p>&copy; 2025 IView Global Tech Services LLC</p>
-    </footer>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Innovative Tech Solutions for a Global Future</h1>
+        <p>At IView Global Tech Services, we specialize in delivering cutting-edge technology solutions that drive digital transformation. Our team of experts works with clients worldwide to create scalable, secure, and efficient solutions that power businesses for a global future.</p>
+        <a href="#contact" class="cta-btn">Contact Us</a>
+    </div>
+</section>
+
+
+<!-- About Us Section -->
+<section id="about">
+    <h2>About Us</h2>
+    <p>We are a global technology solutions company offering expert services in software development, cloud, and consulting.</p>
+</section>
+
+<!-- Services Section -->
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="services-container">
+        <div class="service">
+            <h3>Consulting</h3>
+            <p>We provide strategic IT consulting to help businesses thrive in the digital age.</p>
+        </div>
+        <div class="service">
+            <h3>Software Development</h3>
+            <p>Custom software solutions to drive your business forward.</p>
+        </div>
+        <div class="service">
+            <h3>Cloud Solutions</h3>
+            <p>Scalable and secure cloud solutions for businesses of all sizes.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Form Section -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2025 IView Global Tech Services. All rights reserved.</p>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
