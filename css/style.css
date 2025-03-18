@@ -1,0 +1,178 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: left;  /* Centers the logo horizontally */
+    align-items: left;  /* Centers the logo vertically */
+    height: 100px;  /* Set a fixed height for the header */
+    overflow: hidden;  /* Ensures that anything exceeding the header height is hidden */
+    position: relative;  /* Set the header as a relative container for absolute positioning */
+}
+
+/* Logo styling */
+.logo a {
+    display: block;
+    text-align: left;
+}
+
+.logo img {
+    height: 80px;  /* Adjust the height of the logo */
+    width: auto;    /* Maintain the aspect ratio */
+    max-width: 100%; /* Ensure the logo doesn't stretch beyond the container */
+}
+
+/* Navigation styling */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;  /* Position the nav links absolutely */
+    bottom: 10px;  /* Align them to the bottom of the header */
+    right: 20px;  /* Align them to the right of the header */
+}
+
+/* Navigation list item styling */
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* Navigation link styling */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero {
+    background: url('assets/images/hero-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: black;  /* Change font color to black */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px; /* Add some padding for smaller screens */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: black;  /* Ensure the heading is black */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;  /* Ensure the paragraph text is black */
+}
+
+.cta-btn {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-btn {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.service {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .logo img {
+        height: 60px;  /* Reduce the size of the logo for smaller screens */
+    }
+
+    header {
+        height: 80px;  /* Adjust header height for smaller screens */
+    }
+}
