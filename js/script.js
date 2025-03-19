@@ -1,5 +1,4 @@
-<script>
-    (function() {
+(function() {
         emailjs.init("p113sa_AqtamQCI02"); // Correct User ID
 
         // Event listener for form submission
@@ -15,4 +14,3 @@
                 });
         });
     })();
-</script>
